@@ -8,7 +8,7 @@ namespace CSharp_Challenge_ImaginaryCodingInterview.classes
         private readonly int[] questions;
         private readonly int totalTime;
         private readonly bool[] interviewCriteria;
-        private bool isQualified;
+        private readonly bool isQualified;
         private readonly bool allQuestionsAnswered; //Checks to see if the interviewee answered all the questions
 
         // - Constructors -
