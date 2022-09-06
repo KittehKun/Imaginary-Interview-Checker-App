@@ -6,7 +6,7 @@ namespace CSharp_EmployeeCreation
     {
         public string Name { get; }
         public int Age { get; }
-        public int LastSSN { get; }
+        public string LastSSN { get; }
     }
 }
 
