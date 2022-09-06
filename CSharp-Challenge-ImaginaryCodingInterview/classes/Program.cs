@@ -5,7 +5,12 @@
  */
 
 Interview interviewee = new Interview(new int[] { 5, 5, 10, 10, 15, 15, 20, 20 }, 120); //Expected Output true
+Console.WriteLine(interviewee.IsQualified);
 Interview interviewee2 = new Interview(new int[] { 2, 3, 8, 6, 5, 12, 10, 18 }, 64); //Expected Output true
+Console.WriteLine(interviewee2.IsQualified);
 Interview interviewee3 = new Interview(new int[] { 5, 5, 10, 10, 25, 15, 20, 20 }, 120); //Expected Output false | Exceeded the time limit for a medium question
+Console.WriteLine(interviewee3.IsQualified);
 Interview interviewee4 = new Interview(new int[] { 5, 5, 10, 10, 15, 15, 20 }, 120); //Expected Output false | Did not complete all the questions
+Console.WriteLine(interviewee4.IsQualified);
 Interview interviewee5 = new Interview(new int[] { 5, 5, 10, 10, 15, 15, 20, 20 }, 130); //Expected Output false | Solved all the questions in their respected time limits but exceeded the total time limit of the interview
+Console.WriteLine(interviewee5.IsQualified);
