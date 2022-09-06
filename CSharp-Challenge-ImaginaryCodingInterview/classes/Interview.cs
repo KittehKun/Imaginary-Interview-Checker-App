@@ -65,7 +65,7 @@ namespace CSharp_Challenge_ImaginaryCodingInterview.classes
             }
 
             //Check if the interviewee is qualified
-            if(this.interviewCriteria.All(element => element == true) && allQuestionsAnswered)
+            if(this.interviewCriteria.All(element => element == true) && allQuestionsAnswered && this.totalTime <= 120)
             {
                 this.isQualified = true;
                 Console.WriteLine(isQualified);
