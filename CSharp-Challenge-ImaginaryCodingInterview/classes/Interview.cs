@@ -5,11 +5,11 @@ namespace CSharp_Challenge_ImaginaryCodingInterview.classes
     public class Interview
     {
         // - Fields -
-        private int[] questions;
-        private int totalTime;
-        private bool[] interviewCriteria;
+        private readonly int[] questions;
+        private readonly int totalTime;
+        private readonly bool[] interviewCriteria;
         private bool isQualified;
-        private bool allQuestionsAnswered; //Checks to see if the interviewee answered all the questions
+        private readonly bool allQuestionsAnswered; //Checks to see if the interviewee answered all the questions
 
         // - Constructors -
         public Interview(int[] questions, int totalTime)
@@ -68,11 +68,9 @@ namespace CSharp_Challenge_ImaginaryCodingInterview.classes
             if(this.interviewCriteria.All(element => element == true) && allQuestionsAnswered && this.totalTime <= 120)
             {
                 this.isQualified = true;
-                Console.WriteLine(isQualified);
             } else
             {
                 this.isQualified = false;
-                Console.WriteLine(isQualified);
             }
 
         }
@@ -144,6 +142,12 @@ namespace CSharp_Challenge_ImaginaryCodingInterview.classes
             {
                 return false;
             }
+        }
+
+        // - Properties -
+        public bool IsQualified
+        {
+            get { return this.isQualified; }
         }
     }
 }
